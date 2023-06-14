@@ -610,6 +610,7 @@ button:focus {
 
 .modal {
   position: absolute;
+  padding: 72px 24px 24px 24px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -669,30 +670,90 @@ button:focus {
   color: #2E2F42;
 }
 
+.modal-label{
+  margin-bottom: 8px;
+}
+
+.user-label{
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.user-input{
+  position: relative;
+}
+
 .modal-input-1 {
-  width: 360px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-bottom: 26px;
-  font-size: 12px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: #4D5AE5;
 }
 
-.modal-input-2 {
-  width: 360px;
-  height: 120px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;  
+.label-icon{
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-1:focus .label-icon {
+  fill: #4D5AE5;
+}
+
+.modal-comment{
   margin-bottom: 16px;
-  padding-left: 16px;
-  font-size: 12px;
 }
 
-.modal-button{
-  width: 169px;
-  background: #4D5AE5;
-  height: 56px;
-  border: none;
+.user-comment{
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-comment:focus{
+  border-color: #4D5AE5; 
+}
+
+.modal-checkbox{
+  margin-bottom: 24px;
+}
+
+.checkbox-lable{
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.checkbox-lable-span{
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px; 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  fill: transparent; 
 }
