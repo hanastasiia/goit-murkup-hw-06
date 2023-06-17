@@ -818,9 +818,25 @@ button:focus {
   fill: transparent;
 }
 
+.user-privacy:checked + .checkbox-lable span {
+background-color: var(--color-ocean);
+border: none;
+fill: var(--color-cloud);
+}
+
+
+
+
+
 .modal-link {
   color: var(--color-iris);
 }
+
+
+
+
+
+
 
 .modal-button {
   display: block;
