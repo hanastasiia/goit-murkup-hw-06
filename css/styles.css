@@ -719,7 +719,7 @@ button:focus {
   font-weight: 500;
   text-align: center;
   margin-bottom: 16px;
-  position: absolute;
+
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #2e2f42;
